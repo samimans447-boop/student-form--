@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Student Registration</h2>
+
+    <form onsubmit="showMessage(event)">
+        <input type="text" placeholder="ስም" required>
+        <input type="text" placeholder="የአባት ስም" required>
+        <input type="number" placeholder="እድሜ" required>
+        <input type="email" placeholder="ኢሜል" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+function showMessage(event) {
+    event.preventDefault();
+    alert("መረጃው ተቀባይነት አግኝቷል!");
+}
+</script>
+
+</body>
+</html>
